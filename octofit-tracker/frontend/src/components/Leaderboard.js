@@ -66,7 +66,7 @@ function Leaderboard() {
                       </td>
                       <td>
                         <span className="badge bg-primary octofit-badge">
-                          {entry.user ? entry.user.username || entry.user : '—'}
+                          {entry.username || (entry.user ? entry.user.username || entry.user : '—')}
                         </span>
                       </td>
                       <td>

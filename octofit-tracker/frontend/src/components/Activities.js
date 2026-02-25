@@ -72,7 +72,7 @@ function Activities() {
                       <td><span className="rank-number">{idx + 1}</span></td>
                       <td>
                         <span className="badge bg-primary octofit-badge">
-                          {activity.user ? activity.user.username || activity.user : '—'}
+                          {activity.username || (activity.user ? activity.user.username || activity.user : '—')}
                         </span>
                       </td>
                       <td>
