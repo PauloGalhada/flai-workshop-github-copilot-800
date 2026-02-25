@@ -25,6 +25,9 @@ if codespace_name:
 else:
     base_url = "http://localhost:8000"
 
+# Export the API base URL so other app components can reference it
+os.environ.setdefault('OCTOFIT_API_BASE_URL', base_url)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', api_root, name='api-root'),
